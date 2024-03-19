@@ -202,8 +202,8 @@ class Dataset_val(Dataset):
                 new_img = sitk.GetImageFromArray(new_img)
                 new_gt = sitk.GetImageFromArray(new_gt)
                 
-                sitk.WriteImage(new_img,r'C:\My_Data\TMI\Second_Data\Only_4Chamber\imgs'+'/'+'img_'+name+'.nii.gz')
-                sitk.WriteImage(new_gt,r'C:\My_Data\TMI\Second_Data\Only_4Chamber\gts'+'/'+'gt_'+name+'.nii.gz')
+                sitk.WriteImage(new_img,r'C:\My_Data\TMI\Second_Data\Only_4Chamber\imgs'+'/'+name+'_img'+'.nii.gz')
+                sitk.WriteImage(new_gt,r'C:\My_Data\TMI\Second_Data\Only_4Chamber\gts'+'/'+name+'_gt'+'.nii.gz')
                 
         return  0
         
